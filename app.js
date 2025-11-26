@@ -1374,8 +1374,7 @@ function editVideo(videoId) {
     document.getElementById('editVideoTitle').value = video.title;
 
     // No longer showing URL fields
-    const urlGroup = document.getElementById('editVideoUrlGroup');
-    urlGroup.style.display = 'none';
+
 
     showModal('editVideoModal');
 }
