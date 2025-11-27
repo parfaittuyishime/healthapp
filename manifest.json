@@ -10,13 +10,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/logo.png",
+      "src": "logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/logo.png",
+      "src": "logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -35,7 +35,7 @@
       "url": "/?view=self-development",
       "icons": [
         {
-          "src": "/logo.png",
+          "src": "logo.png",
           "sizes": "96x96",
           "type": "image/png"
         }
@@ -48,7 +48,7 @@
       "url": "/?view=income",
       "icons": [
         {
-          "src": "/logo.png",
+          "src": "logo.png",
           "sizes": "96x96",
           "type": "image/png"
         }
