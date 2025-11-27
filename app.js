@@ -578,6 +578,14 @@ function renderHabitsView() {
     updateConsistencyChart();
 }
 
+// Helper to get local date string YYYY-MM-DD
+function getLocalDateString(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
 function updateHabitsTable() {
     const dateRange = parseInt(document.getElementById('dateRangeSelect').value);
     const tableHeader = document.getElementById('tableHeader');
@@ -645,7 +653,7 @@ function updateHabitsTable() {
 
         // Date cells
         dates.forEach((date, index) => {
-            const dateStr = date.toISOString().split('T')[0];
+            const dateStr = getLocalDateString(date);
             const cell = document.createElement('td');
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
@@ -701,7 +709,7 @@ function getHabitIcon(iconName) {
 function toggleHabit(habitId, date, completed) {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    const todayStr = today.toISOString().split('T')[0];
+    const todayStr = getLocalDateString(today);
 
     // Only allow editing today
     if (date !== todayStr) {
@@ -739,7 +747,7 @@ function updateConsistencyChart() {
     for (let i = 0; i < dateRange; i++) {
         const date = new Date(today);
         date.setDate(date.getDate() - i); // Go backwards
-        const dateStr = date.toISOString().split('T')[0];
+        const dateStr = getLocalDateString(date);
 
         // Format label
         if (i === 0) {
