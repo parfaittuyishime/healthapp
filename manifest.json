@@ -2,9 +2,9 @@
   "name": "Parfait's Life",
   "short_name": "Parfait Life",
   "description": "Personal development and life management application",
-  "start_url": "https://parfaittuyishime.github.io/healthapp/",
-  "scope": "https://parfaittuyishime.github.io/healthapp/",
-  "display": "standalone",
+  "start_url": "/healthapp/",
+  "scope": "/healthapp/",
+ "display": "fullscreen"
   "background_color": "#f5f7fa",
   "theme_color": "#667eea",
   "orientation": "portrait-primary",
@@ -56,5 +56,6 @@
     }
   ]
 }
+
 
 
