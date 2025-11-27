@@ -2,8 +2,8 @@
   "name": "Parfait's Life",
   "short_name": "Parfait Life",
   "description": "Personal development and life management application",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/healthapp/",
+  "scope": "/healthapp/",
   "display": "standalone",
   "background_color": "#f5f7fa",
   "theme_color": "#667eea",
@@ -56,3 +56,4 @@
     }
   ]
 }
+
